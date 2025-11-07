@@ -33,7 +33,7 @@ const platforms = [
 export const PlatformLinks = () => {
   return (
     <section className="max-w-2xl mx-auto px-4 mb-12">
-      <h2 className="text-3xl font-bold mb-6 text-center">Connect With Me</h2>
+      <h2 className="text-3xl font-bold mb-6 text-center font-orbitron tracking-wide">CONNECT WITH ME</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {platforms.map((platform, index) => (
           <motion.div
@@ -42,16 +42,17 @@ export const PlatformLinks = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1 + index * 0.1 }}
           >
-            <Card className={`p-6 bg-gradient-to-br ${platform.color} border-border hover:border-primary transition-all duration-300 hover:scale-105 group`}>
+            <Card className={`p-6 bg-gradient-to-br ${platform.color} border-border hover:border-primary transition-all duration-300 hover:scale-105 group relative overflow-hidden`}>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
               <a 
                 href={platform.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-between"
+                className="flex items-center justify-between relative"
               >
                 <div className="flex items-center gap-3">
                   <span className="text-3xl">{platform.icon}</span>
-                  <span className="text-lg font-semibold">{platform.name}</span>
+                  <span className="text-lg font-semibold font-rajdhani tracking-wide">{platform.name}</span>
                 </div>
                 <ExternalLink className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
               </a>

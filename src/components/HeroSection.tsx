@@ -32,18 +32,18 @@ export const HeroSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-6xl md:text-7xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent"
+          className="text-6xl md:text-8xl font-black mb-4 bg-gradient-primary bg-clip-text text-transparent font-orbitron tracking-wider"
         >
-          fzisch
+          FZISCH
         </motion.h1>
         
         <motion.p 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="text-xl text-muted-foreground max-w-md mx-auto"
+          className="text-xl text-muted-foreground max-w-md mx-auto font-rajdhani font-semibold tracking-wide"
         >
-          Streamer • Content Creator • Gamer
+          STREAMER • CONTENT CREATOR • GAMER
         </motion.p>
       </motion.div>
     </section>

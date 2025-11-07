@@ -59,6 +59,10 @@ export default {
       transitionProperty: {
         'smooth': 'var(--transition-smooth)',
       },
+      fontFamily: {
+        'rajdhani': ['Rajdhani', 'sans-serif'],
+        'orbitron': ['Orbitron', 'sans-serif'],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

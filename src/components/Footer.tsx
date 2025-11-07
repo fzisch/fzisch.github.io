@@ -1,8 +1,8 @@
 export const Footer = () => {
   return (
-    <footer className="py-8 text-center text-muted-foreground border-t border-border">
-      <p className="text-sm">
-        © {new Date().getFullYear()} fzisch. All rights reserved.
+    <footer className="relative py-8 text-center text-muted-foreground border-t border-border">
+      <p className="text-sm font-rajdhani tracking-wide">
+        © {new Date().getFullYear()} FZISCH. ALL RIGHTS RESERVED.
       </p>
     </footer>
   );

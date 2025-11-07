@@ -26,10 +26,11 @@ export const DonationLinks = () => {
       transition={{ duration: 0.6, delay: 1.6 }}
       className="max-w-2xl mx-auto px-4 mb-12"
     >
-      <Card className="p-8 bg-gradient-to-br from-card to-secondary border-border shadow-card text-center">
-        <Heart className="w-12 h-12 text-primary mx-auto mb-4" />
-        <h2 className="text-2xl font-bold mb-2">Support the Stream</h2>
-        <p className="text-muted-foreground mb-6">
+      <Card className="p-8 bg-gradient-to-br from-card to-secondary border-border shadow-card text-center relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent" />
+        <Heart className="w-12 h-12 text-primary mx-auto mb-4 animate-pulse relative" />
+        <h2 className="text-3xl font-bold mb-2 font-orbitron tracking-wide relative">SUPPORT THE STREAM</h2>
+        <p className="text-muted-foreground mb-6 font-rajdhani text-lg relative">
           Your support helps me create better content and improve the stream quality
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -42,7 +43,7 @@ export const DonationLinks = () => {
             >
               <Button 
                 asChild 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow hover:shadow-glow transition-all duration-300 group"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow hover:shadow-glow transition-all duration-300 group font-rajdhani font-bold tracking-wide"
               >
                 <a 
                   href={option.url}
