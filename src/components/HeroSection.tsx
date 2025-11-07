@@ -4,7 +4,6 @@ import profileAvatar from "@/assets/profile-avatar.png";
 export const HeroSection = () => {
   return (
     <section className="relative min-h-[40vh] flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background z-0" />
       
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
